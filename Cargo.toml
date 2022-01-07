@@ -1,0 +1,10 @@
+[package]
+name = "cargo-vendor-repro"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { git = "https://github.com/fengalin/tokio", tag = "tokio-0.2.13-throttling", features = ["io-util", "macros", "rt-core", "sync", "stream", "time", "tcp", "udp", "rt-util"] }
+
